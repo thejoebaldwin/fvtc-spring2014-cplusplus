@@ -1,8 +1,8 @@
 cplusplus-spring2014
 ====================
 
+# This is a header
 
+## this is a sub header
 
-# This is my test markup
-
-_this is underline_
+this is some *bold* text

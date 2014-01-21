@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include <Windows.h>
+#include <string>
 
 using namespace std;
 
@@ -14,12 +15,20 @@ int main()
 	setConsole();
 	//end of dont type this
 
-	int num = 5;
+	int num = -5;
+	int num2 = 27;
+
 	bool success = true;
+	double miles = 5.256;
+	string hello = "hi there";
+	char c = 'y';
 
-
-
-	cout << "I'm working!" << endl;
+	cout << "num =\t    " << num << endl;
+	cout << "success =\t" << success << endl;
+	cout << "miles =\t  " << miles << endl;
+	cout << "hello =\t  " << hello << endl;
+	cout << "c =\t      " << c << endl;
+	cout << "num + num2 = " << num + num2 << endl;
 
 	_getch();
 	return 0;

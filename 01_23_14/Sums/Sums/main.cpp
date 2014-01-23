@@ -11,7 +11,39 @@ void setConsole();
 int main()
 {
 	setConsole();
-  	cout << "hello";
+  	
+
+    double number1 = 3.678987654, number2 = 7,
+		number3 = 11, sum = 0, average = 0, 
+		product = 0, exponent, modulus;
+
+	sum = number1 + number2 + number3;
+	average = sum / 3;
+	product = number1 * number2 * number3;
+	exponent = pow(number1, number2);
+	modulus = 5 % 2;
+
+	cout << "Number1 = " << number1 << endl;
+	cout << "Number2 = " << number2 << endl;
+	cout << "Number3 = " << number3 << endl;
+
+	cout << setprecision(3) << fixed;
+	
+	cout << "Sum = " << sum << endl;
+
+	//cout << setprecision(1) << resetiosflags(ios::fixed); 
+
+	
+
+	cout << "Average = " << average << endl;
+    cout << "Product = " << product << endl;
+	cout << setprecision(1);
+	cout << "Product = " << product << endl;
+
+	cout << "Exponent = " << exponent << endl;
+ 
+	cout << "Modulus = " << modulus << endl;
+
 	_getch();
 	return 0;
 }

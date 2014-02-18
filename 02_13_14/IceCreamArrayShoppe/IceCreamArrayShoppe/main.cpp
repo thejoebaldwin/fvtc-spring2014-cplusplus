@@ -18,6 +18,11 @@ int main()
 			cout << i + 1 << ". " << flavors[i] << endl;
 		}
 		cin >> flavor;
+		cout << "You entered:" << flavor << endl;
+		//clear out istream after input
+		cin.clear();
+		fflush(stdin);
+
 		if (flavor - 1 >= flavors_length || flavor - 1 < 0 )
 		{
 			cout << "Please enter a valid flavor" << endl;
@@ -26,6 +31,9 @@ int main()
 		{
 			cout << "You selected " << flavors[flavor - 1] << endl;
 		}
+		
+
+
 		//control structure code
 		cout << "Press any key to continue, 'q' to quit" << endl;
 		char c = _getch();

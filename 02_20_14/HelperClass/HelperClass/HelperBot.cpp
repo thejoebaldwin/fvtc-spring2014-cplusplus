@@ -168,6 +168,9 @@ bool HelperBot::IsNumericInt(string value)
 		//test if the character is a number here
 		switch (value[i])
 		{
+			case '-':
+				if (i > 0) success = false;
+				break;
 			case '0':
 			case '1':
 			case '2':
@@ -191,12 +194,16 @@ int HelperBot::ConvertToInt(string value)
 {
 	int total = 0;
 	//loop through string
+	bool negative = false;
 	for (int i = 0; i < value.length(); i++)
 	{
 	//read character, convert to digit
 		int digit = 0;
 		switch(value[i])
 		{
+		case '-':
+			negative = true;
+			break;
 		case '9':
 			digit++;
 		case '8':
@@ -222,6 +229,7 @@ int HelperBot::ConvertToInt(string value)
 		total += number;
 	}
 	//return total
+	if (negative) total *= -1;
 	return total;
 
 }
@@ -237,11 +245,22 @@ void HelperBot::SetConsole()
    	PCONSOLE_FONT_INFOEX font = new CONSOLE_FONT_INFOEX();
    	font->cbSize = sizeof(CONSOLE_FONT_INFOEX);
    
-    	//CONSOLE_FONT_INFOEX is defined in some windows header
-    	GetCurrentConsoleFontEx(hConsole, false, font);
+    //CONSOLE_FONT_INFOEX is defined in some windows header
+    GetCurrentConsoleFontEx(hConsole, false, font);
 	//PCONSOLE_FONT_INFOEX is the same as CONSOLE_FONT_INFOEX*
-    	font->dwFontSize.X = 10;
-    	font->dwFontSize.Y = 18;
+    font->dwFontSize.X = 10;
+    font->dwFontSize.Y = 18;
 	SetCurrentConsoleFontEx(hConsole, false, font);
 	SetConsoleTextAttribute(hConsole, 240); 
+}
+
+
+bool HelperBot::TryParse(string input, int& value)
+{
+	bool success = HelperBot::IsNumeric(input);
+	if (success)
+	{
+		value = HelperBot::ConvertToInt(input);
+	}
+	return success;
 }

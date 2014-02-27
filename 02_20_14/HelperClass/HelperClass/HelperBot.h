@@ -1,4 +1,6 @@
 #include <string>
+
+
 using namespace std;
 
 
@@ -12,5 +14,5 @@ public:
 	static int ConvertToInt(string);
 	static double ConvertToDouble(string);
 	static void SetConsole();
-
+	static bool TryParse(string, int&);
 };

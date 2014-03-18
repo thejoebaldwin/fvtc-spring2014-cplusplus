@@ -13,7 +13,7 @@ int main()
 	int primesLength = 6;
 	int* primesPointer = &primes[0];
 
-	cout << *(primesPointer + 2) << endl;
+	cout << *(primesPointer + 1) << endl;
 
 
 	const int kNumbersLength = 5;

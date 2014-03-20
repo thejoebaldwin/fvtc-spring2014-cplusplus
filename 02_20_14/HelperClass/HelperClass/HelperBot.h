@@ -14,4 +14,6 @@ public:
 	static double ConvertToDouble(string);
 	static void SetConsole();
 	static bool TryParse(string, int&);
+	static string ToCurrency(double);
+    static string PrintArray(int[], int);
 };

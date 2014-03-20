@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AC38659C-F59F-4FE6-AE18-EAAE4443E87D}</ProjectGuid>
-    <RootNamespace>HelperClass</RootNamespace>
+    <ProjectGuid>{14377545-80C3-4C67-A02F-F33360CBD345}</ProjectGuid>
+    <RootNamespace>MoreArrays</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -64,13 +64,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Collection.cpp" />
-    <ClCompile Include="HelperBot.cpp" />
+    <ClCompile Include="..\..\..\02_20_14\HelperClass\HelperClass\HelperBot.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Collection.h" />
-    <ClInclude Include="HelperBot.h" />
+    <ClInclude Include="..\..\..\02_20_14\HelperClass\HelperClass\HelperBot.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -7,15 +7,46 @@
 
 using namespace std;
 
-void prettyPrint(Collection);
+//void prettyPrint(Collection<int>);
 
 int sum(int, int);
 int sum(int, int, int);
-void tempCollectionTest();
+//void tempCollectionTest();
+
+struct Student
+{
+	string FirstName;
+	string LastName;
+	int Credits;
+};
+
 
 int main()
 {
-	Collection c;
+    Student jeff;
+	jeff.FirstName = "Jeff";
+	jeff.LastName = "Richards";
+	jeff.Credits = 27;
+
+	Collection<Student> students;
+	students.Add(jeff);
+
+	for (int i = 0; i < students.Length(); i++)
+	{
+		Student tempStudent = students[i];
+		cout << tempStudent.LastName << "," << tempStudent.FirstName << endl; 
+	}
+
+
+	Collection<string> names;
+	names.Add("Rick");
+	names.Add("Tony");
+	names.Add("Suzy");
+
+	cout << "Names:" << names << endl;
+
+
+	Collection<int> c;
 	c.Add(5);
 	c.Add(7);
 	c.Add(11);
@@ -43,7 +74,7 @@ int main()
 }
 
 
-void prettyPrint(Collection c)
+void prettyPrint(Collection<int> c)
 {
 	cout << "{";
 	for (int i = 0; i < c.Length(); i++)
@@ -65,12 +96,12 @@ int sum(int n1, int n2, int n3)
 	return n1 + n2;
 }
 
-
-void tempCollectionTest()
-{
-	Collection temp;
-	for (int i = 0; i < 50; i++)
-	{
-		temp.Add(55);
-	}
-}
+//
+//void tempCollectionTest()
+//{
+//	Collection<int> temp;
+//	for (int i = 0; i < 50; i++)
+//	{
+//		temp.Add(55);
+//	}
+//}

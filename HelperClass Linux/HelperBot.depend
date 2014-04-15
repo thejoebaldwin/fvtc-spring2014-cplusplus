@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1397578291 source:/home/student/HelperBot/main.cpp
+	<iostream>
+	"Helperbot.h"
+
+1397578155 source:/home/student/HelperBot/HelperBot.cpp
+	"Helperbot.h"
+	<math.h>
+	<stdio.h>
+
+1397578029 /home/student/HelperBot/Helperbot.h
+	<string>
+
+1397578155 source:/home/student/fvtc-spring2014-cplusplus/HelperClass Linux/HelperBot.cpp
+	"Helperbot.h"
+	<math.h>
+	<stdio.h>
+
+1397578029 /home/student/fvtc-spring2014-cplusplus/HelperClass Linux/Helperbot.h
+	<string>
+
+1397578291 source:/home/student/fvtc-spring2014-cplusplus/HelperClass Linux/main.cpp
+	<iostream>
+	"Helperbot.h"
+

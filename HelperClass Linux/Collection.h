@@ -23,6 +23,7 @@ public:
 
 	//friend ostream& operator<<(ostream&, Collection<T>&);
 	T& operator[](int);
+    void Sort();
 };
 
 
@@ -79,7 +80,7 @@ public:
 		_length++;
 	}
 
-    template <class T>
+
 	ostream& <<(ostream &out, Collection<T> &c)
 	{
 		out << "{";
@@ -97,4 +98,25 @@ public:
 	{
 		return _data[index];
 	}
+
+
+template <class T>
+void Collection<T>::Sort()
+{
+ bool sorted;
+ do
+ {
+     sorted = true;
+     for (int i = 0; i < _length - 1; i++)
+     {
+         if (_data[i] > _data[i+1])
+         {
+             T temp = _data[i];
+             _data[i] = _data[i + 1];
+             _data[i + 1] = temp;
+             sorted = false;
+         }
+     }
+ } while (!sorted);
+}
 

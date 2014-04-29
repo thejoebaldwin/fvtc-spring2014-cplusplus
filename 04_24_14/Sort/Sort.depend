@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1398788952 source:/home/student/fvtc-spring2014-cplusplus/04_24_14/Sort/main.cpp
+	<iostream>
+	<string>
+	"../../HelperClass Linux/Collection.h"
+
+1396975170 source:/home/student/fvtc-spring2014-cplusplus/HelperClass Linux/Collection.cpp
+
+1397578155 source:/home/student/fvtc-spring2014-cplusplus/HelperClass Linux/HelperBot.cpp
+	"Helperbot.h"
+	<math.h>
+	<stdio.h>
+
+1397578029 /home/student/fvtc-spring2014-cplusplus/HelperClass Linux/Helperbot.h
+	<string>
+
+1398790814 /home/student/fvtc-spring2014-cplusplus/HelperClass Linux/Collection.h
+	<iostream>
+

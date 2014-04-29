@@ -32,7 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="SuperHero.cpp" />
+		<Unit filename="SuperHero.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="../../HelperClass Linux/Collection.h" />
+		<Unit filename="../../HelperClass Linux/Helperbot.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
